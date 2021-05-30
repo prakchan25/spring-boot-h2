@@ -33,12 +33,12 @@ public class BillionairesRepository {
         return jdbcTemplate.query("SELECT * FROM BILLIONAIRES", new BillionaresRowMapper());
     }
 
-    public Billionaires findById(long id) {
+    public Billionaires findById(int id) {
         return jdbcTemplate.queryForObject("SELECT * FROM BILLIONAIRES WHERE ID=?", new Object[] { id },
                 new BeanPropertyRowMapper<Billionaires>(Billionaires.class));
     }
 
-    public int deleteById(long id) {
+    public int deleteById(int id) {
         return jdbcTemplate.update("DELETE FROM BILLIONAIRES WHERE ID=?", new Object[] { id });
     }
 
