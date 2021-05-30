@@ -1,4 +1,4 @@
-package com.sunriseyonder.sb.h2.billionares;
+package com.sunriseyonder.sb.entity;
 
 public class Billionaires {
 

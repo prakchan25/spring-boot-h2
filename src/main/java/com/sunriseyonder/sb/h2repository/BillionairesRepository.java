@@ -1,8 +1,10 @@
-package com.sunriseyonder.sb.h2.billionares;
+package com.sunriseyonder.sb.h2repository;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
+
+import com.sunriseyonder.sb.entity.Billionaires;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
