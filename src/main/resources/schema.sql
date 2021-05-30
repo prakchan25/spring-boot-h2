@@ -1,0 +1,13 @@
+DROP TABLE IF EXISTS BILLIONAIRES;
+
+CREATE TABLE BILLIONAIRES (
+  ID INT AUTO_INCREMENT  PRIMARY KEY,
+  FIRST_NAME VARCHAR(250) NOT NULL,
+  LAST_NAME VARCHAR(250) NOT NULL,
+  CAREER VARCHAR(250) DEFAULT NULL
+);
+
+INSERT INTO BILLIONAIRES (FIRST_NAME, LAST_NAME, CAREER) VALUES
+  ('Aliko', 'Dangote', 'Billionaire Industrialist'),
+  ('Bill', 'Gates', 'Billionaire Tech Entrepreneur'),
+  ('Folrunsho', 'Alakija', 'Billionaire Oil Magnate');
