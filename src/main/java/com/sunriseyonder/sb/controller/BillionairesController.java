@@ -17,7 +17,7 @@ public class BillionairesController {
     @Autowired
     BillionairesRepository repository;
 
-    @RequestMapping(value = "getBillionaires")
+    @GetMapping("/getBillionaires")
     public List<Billionaires> getAll(){
         logger.info("Fetching all Billionaires from DB..");
         return repository.findAll();
