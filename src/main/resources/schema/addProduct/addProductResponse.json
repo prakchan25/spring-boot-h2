@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Add Product Response",
+  "type": "object",
+  "properties": {
+    "product": {
+      "description": "Product detailed information",
+      "$ref": "../common/product.json"
+    }
+  }
+}

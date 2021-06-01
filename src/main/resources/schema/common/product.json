@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft-04/schema",
+  "title": "Product",
+  "type": "object",
+  "javaType": "com.sunriseyonder.sb.jsonobjects.common.Product",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "brand": {
+      "type": "string"
+    },
+    "operatingSystem": {
+      "type": "string"
+    },
+    "soldBy": {
+      "type": "string"
+    },
+    "availableStock": {
+      "type": "integer"
+    },
+    "price": {
+      "description": "Product Price",
+      "type": "number"
+    }
+  }
+}
